@@ -4,10 +4,7 @@ This project implements Conway's Game of Life in x86 assembly. The program reads
 
 ## Project Structure
 
-The project consists of two main components:
-
-1. Game of Life Implementation with Standard I/O (Task 0x00)
-2. Game of Life Implementation with File I/O (Task 0x02)
+The project consists of the Implementation of Game of Life  with File I/O 
 
 ### Game of Life Rules
 
@@ -22,7 +19,7 @@ The neighborhood of a cell consists of the 8 adjacent cells in a 2D matrix, incl
 
 ## Input Format
 
-### Task 0x00 (Standard Input)
+### (Standard Input)
 The program expects input in the following format:
 ```
 m       // number of rows (1 ≤ m ≤ 18)
@@ -35,7 +32,6 @@ k       // number of evolution steps (k ≤ 15)
 ```
 
 ### Task 0x02 (File Input/Output)
-- Uses the same input format as Task 0x00
 - Reads input from `in.txt`
 - Writes output to `out.txt`
 - Implements file operations using C standard library functions
@@ -65,26 +61,17 @@ The implementation includes several key features:
 
 ### Compilation
 ```bash
-# Task 0x00 (Standard I/O version)
-as -32 task00.s -o task00.o
-gcc -m32 task00.o -o task00
-
-# Task 0x02 (File I/O version)
-as -32 task02.s -o task02.o
-gcc -m32 task02.o -o task02
+# Main (File I/O version)
+as -32 main.s -o main.o
+gcc -m32 main.o -o main
 ```
 
 ### Running
-Task 0x00 (Standard I/O):
-```bash
-./task00 < input.txt
-```
-
 Task 0x02 (File I/O):
 ```bash
-./task02
+./main
 ```
-Note: Task 0x02 automatically reads from in.txt and writes to out.txt
+Note: The program automatically reads from in.txt and writes to out.txt
 
 ## Example
 
