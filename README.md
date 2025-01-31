@@ -19,7 +19,7 @@ The neighborhood of a cell consists of the 8 adjacent cells in a 2D matrix, incl
 
 ## Input Format
 
-### (Standard Input)
+### Standard Input
 The program expects input in the following format:
 ```
 m       // number of rows (1 ≤ m ≤ 18)
@@ -31,7 +31,7 @@ x2 y2   // coordinates of second live cell
 k       // number of evolution steps (k ≤ 15)
 ```
 
-### Task 0x02 (File Input/Output)
+### File Input/Output
 - Reads input from `in.txt`
 - Writes output to `out.txt`
 - Implements file operations using C standard library functions
